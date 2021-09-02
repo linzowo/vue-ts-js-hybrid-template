@@ -258,7 +258,7 @@ module.exports = {
     'array-bracket-spacing': [2, 'never'],
     'import/extensions': ['error', 'always', {
       js: 'never',
-      vue: 'never'
+      // vue: 'never'
     }],
     'linebreak-style': [0, 'error', 'windows'] // 我这个版本是添加了这样一行，声明这是windows操作系统即可。
   }

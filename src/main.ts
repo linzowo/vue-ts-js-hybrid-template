@@ -4,6 +4,7 @@ import ElementUI from 'element-ui'
 import App from './App.vue'
 import router from '@/router/index'
 import store from '@/store/index'
+import DvFullScreenContainer from './components/fullScreenContainer/index'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
@@ -21,6 +22,10 @@ Vue.use(ElementUI)
 // Vue.use(ElementUI)
 
 Vue.config.productionTip = false // permission control
+
+document.documentElement.style.fontSize = `${process.env.VUE_APP_ROOT_FONT_SIZE}px`
+// document.documentElement.style.fontSize = `192px`
+Vue.use(DvFullScreenContainer)
 
 new Vue({
   router,

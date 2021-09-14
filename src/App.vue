@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view />
+    <dv-full-screen-container>
+      <router-view />
+    </dv-full-screen-container>
   </div>
 </template>
 
